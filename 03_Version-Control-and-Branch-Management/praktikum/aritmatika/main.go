@@ -19,7 +19,7 @@ func main() {
     tambah := angka1 + angka2
     kurang := angka1 - angka2
     kali := angka1 * angka2
-    bagi := angka1 / angka2
+    
 	
 	
 	
