@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "f630c2e3-3a6d-4d3d-a9ef-0c1fb729e073",
+		"name": "Skenario1-tugasAlta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29105583"
+	},
+	"item": [
+		{
+			"name": "tampilkan-data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "get-data-id3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts?id=3",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save-data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"userId\": 10,\n        \"id\": 101,\n        \"title\": \"ea molestias quasi exercitationem repellat qui ipsa sit aut\",\n        \"body\": \"Aliquam lacus nisi, tincidunt vehicula accumsan vel, dignissim ac massa. Phasellus placerat finibus velit, eget mollis orci pretium at. Quisque in sem nec tellus interdum dictum. Nunc posuere risus arcu, sed aliquet dui pretium sit amet. Pellentesque vulputate pellentesque neque at porttitor. Fusce cursus quis sem a luctus. Proin sit amet tellus sagittis velit finibus iaculis nec non velit.\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts/2"
+			},
+			"response": []
+		}
+	]
+}
